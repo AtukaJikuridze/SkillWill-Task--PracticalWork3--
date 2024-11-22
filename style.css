@@ -1,0 +1,33 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  padding: 30px 0px;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+.container .card {
+  width: 30%;
+  border: 1px solid black;
+  padding: 20px;
+  text-align: center;
+  max-width: 100%;
+}
+
+@media screen and (max-width: 1300px) {
+  .container .card {
+    width: 49%;
+  }
+}
+@media screen and (max-width: 770px) {
+  .container .card {
+    width: 90%;
+  }
+  .container .card h1 {
+    font-size: 20px;
+  }
+}
